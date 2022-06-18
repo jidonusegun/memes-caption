@@ -1,38 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 4rem;
+}
+.header-container {
+  color: white;
+  font-weight: bold;
+  background: #002147;
+  width: '100%';
+  text-align: center;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+.form-container{
+  display: flex;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+.file-picker {
+  color: white;
+  font-weight: bold;
+  background: #002147;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  cursor: pointer;
+}
+input[type="text"] {
+  padding: .5rem 1rem;
+  font-size: 16px;
+  width: 300px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  border: 1px solid #555;
+}
+input[type="number"] {
+  font-size: 16px;
+  width: 60px;
+  padding: .5rem 1rem;
+  margin: 0 1rem;
+  border: 1px solid #555;
+
+}
+.color-label {
+  cursor: pointer;
+}
+select {
+  font-size: 16px;
+  width: 100px;
+  padding: .5rem 1rem;
+  margin-left: 1rem;
+  border: 1px solid #555;
+}
+.show-caption {
+  width: 300px;
+  height: auto;
+  border: 1px solid #555;
+  margin-top: 2rem;
+  position: relative;
+  vertical-align: bottom;
+}
+.style-container{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.show-caption .top {
+  position: absolute;
+  top: -1rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  padding: .5rem 1rem;
+  max-width: 270px;
+  word-wrap: break-word;
+  line-height: auto;
+  word-spacing: 10px;
+}
+.show-caption .bottom {
+  position: absolute;
+  bottom: 0rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  padding: .5rem 1rem;
+  max-width: 270px;
+  word-wrap: break-word;
+  line-height: auto;
+  word-spacing: 10px;
+}
+.empty-caption {
+  width: 300px;
+  height: 350px;
+  border: 1px solid #555;
+  margin-top: 2rem;
+}
+.export-container {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+.export-container button {
+  cursor: pointer;
+  background: #002147;
+  padding: .5rem 1rem;
+  border: none;
+  margin-top: 1rem;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.display-none {
+  display: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.display-flex {
+  display: flex;
+}
+@media only screen and (max-width: 341px) {
+  input[type="text"] {
+    padding: .5rem 1rem;
+    font-size: 16px;
+    width: 270px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    border: 1px solid #555;
   }
 }

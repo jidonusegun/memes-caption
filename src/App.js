@@ -1,25 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/header';
+import AppContext from './components/context';
+import FilePicker from './components/form/filePicker';
+import ShowCaption from './components/showCaption';
+import FirstInput from './components/form/firstInput';
+import SecondInput from './components/form/secondInput';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContext>
+      <Header/>
+      <main className="App">
+        <FilePicker />
+        <FirstInput />
+        <SecondInput />
+        <ShowCaption />
+      </main>
+    </AppContext>
   );
 }
 
