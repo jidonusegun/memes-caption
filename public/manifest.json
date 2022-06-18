@@ -9,7 +9,7 @@
   "description": "This is an App to adding text to image and downloading as either jpg or png",
   "icons": [
       {
-        "src": "icon-192x192.png",
+        "src": "icon-144x144.png",
         "sizes": "144x144",
         "type": "image/png",
         "purpose": "maskable any"
